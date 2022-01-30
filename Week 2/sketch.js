@@ -38,12 +38,12 @@ function draw()
     circX = circX + speedX;
 }
 
-if (squareY >= 368)
+if (squareY >= 300)
 {
     speedY = 10;
     speedY = -speedY;
 }
-else if (squareY < 0)
+else if (squareY < 10)
 {
     speedY = 10;
 }
