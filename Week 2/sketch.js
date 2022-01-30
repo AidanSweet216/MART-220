@@ -25,6 +25,7 @@ function draw()
     text(x +"and"+ y, 100, 300);
     textSize(42);
     text("Pong", 762, 34);
+    text("By: Aidan Sweet", 1171, 857)
 
     if (circX >= 1143)
     {
