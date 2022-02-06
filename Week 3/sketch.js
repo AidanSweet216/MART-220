@@ -10,16 +10,17 @@ var speedX = 10;
 var speedY = 10;
 var buttonX = 0;
 var buttonY = 0;
-var img;
+let img;
 
-function preload() {
-  img = loadImage('assets/ice.jpg');
-}
+//function preload() {
+  //img = loadImage('assets/ice.jpg');
+//}
 
 
 function setup()
 {
     createCanvas(1920,1080);
+    img = loadImage('assets/ice.jpg');
     squareX1 = 105;
     squareX2 = 1143;
     squareY1 = 368;
