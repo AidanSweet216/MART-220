@@ -47,13 +47,13 @@ function draw()
     //translate(0,0);
     //rotate(90);
     image(myImages[1],circX,circY, 70,70);
-    /*push();
-    translate(width/2-x,height/2-100);
-    rotate(frameCount * .08);
-    image(myImages[1], 100, 100);
-    pop();
-    x+=1;
-    */
+
+    if(x <= 0 || x >= width-100)
+    {
+        speedX*=-1
+    }
+    x+=speedX;
+
     square(squareX[1],squareY[1],100);
     square(squareX[2],squareY[1],100);
     square(squareX[3],squareY[2],150);
