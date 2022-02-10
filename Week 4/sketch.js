@@ -48,11 +48,6 @@ function draw()
     //rotate(90);
     image(myImages[1],circX,circY, 70,70);
 
-    if(x <= 0 || x >= width-100)
-    {
-        speedX*=-1
-    }
-    x+=speedX;
 
     square(squareX[1],squareY[1],100);
     square(squareX[2],squareY[1],100);
