@@ -47,6 +47,12 @@ function draw()
     //translate(0,0);
     //rotate(90);
     image(myImages[1],circX,circY, 70,70);
+   /* push();
+    translate(width/2,height/2-100);
+    rotate(frameCount * .08);
+    image(myImages[1], 70, 70);
+    pop();
+    */
     square(squareX[1],squareY[1],100);
     square(squareX[2],squareY[1],100);
     square(squareX[3],squareY[2],150);
