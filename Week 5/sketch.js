@@ -29,11 +29,6 @@ function setup()
     square1 = new mySquare(105,368,100);
     square2 = new mySquare(1400,368,100);
     square3 = new mySquare(125,600,125);
- 
-
-    
-   
-
     
 }
 function draw()
