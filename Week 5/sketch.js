@@ -17,7 +17,6 @@ function preload() {
   myFont = loadFont('assets/Rowdies-Regular.ttf');
 }
 
-
 function setup()
 {
     createCanvas(windowWidth-20, windowHeight-20);
