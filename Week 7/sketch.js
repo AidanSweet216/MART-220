@@ -13,6 +13,8 @@ var names = [];
 var start = 100;
 let img;
 let myFont;
+var result = [];
+var monteObject;
 function preload() {
   names = loadStrings("./assets/Spin.txt");
   img = loadImage('assets/ice.jpg');
@@ -26,6 +28,7 @@ function setup()
 {
     createCanvas(windowWidth-20, windowHeight-20);
     setInterval(timeIt, 1000);
+    monteObject = loadAnimation(result[0], result[result.length-1]);
     //img = loadImage('assets/ice.jpg');
     textFont(myFont);
     textSize(36);
@@ -54,7 +57,8 @@ function draw()
     square2.drawSquare();
     square2.moveSquare();
     square3.drawSquare();
-    image(imagesToDisplay[i].getImage(),
+    animation(monteObject,350,250);
+    /*image(imagesToDisplay[i].getImage(),
 		imagesToDisplay[i].getX(), 
 		imagesToDisplay[i].getY(), 
 		imagesToDisplay[i].getW(),
