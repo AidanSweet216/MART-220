@@ -19,16 +19,15 @@ function preload() {
   names = loadStrings("./assets/Spin.txt");
   img = loadImage('assets/ice.jpg');
   myImages[0] = img
-  img = loadImage('assets/monte.png')
-  myImages[1] = img
   myFont = loadFont('assets/Rowdies-Regular.ttf');
 }
 
 function setup()
 {
     createCanvas(windowWidth-20, windowHeight-20);
+    console.log(names);
     setInterval(timeIt, 1000);
-    //monteObject = loadAnimation(result[0], result[result.length-1]);
+    monteObject = loadAnimation(names[0], names[names.length-1]);
     textFont(myFont);
     textSize(36);
     text('p5*js', 10, 50);
@@ -44,7 +43,7 @@ function setup()
       // add each object to the array
       imagesToDisplay[k] = imageClassObject;
     }
-    setInterval(changeTheDarnAnimation, 100);
+    
     
 }
 function draw()
@@ -56,8 +55,8 @@ function draw()
     square2.drawSquare();
     square2.moveSquare();
     square3.drawSquare();
-    //animation(monteObject,350,250);
-    image(imagesToDisplay[i].getImage(),
+    animation(monteObject,800,385,);
+    /*image(imagesToDisplay[i].getImage(),
 		imagesToDisplay[i].getX(), 
 		imagesToDisplay[i].getY(), 
 		imagesToDisplay[i].getW(),
@@ -121,15 +120,4 @@ function mouseMoved()
       
     }
 
-    function changeTheDarnAnimation()
-{
-	//console.log("I am here..");
-	// this increments our frames to display in the animation
-	i+=1;
-	// check to see if we have gone beyond the size of the array
-	if(i >= imagesToDisplay.length)
-	{
-		// reset to the first index of the array
-		i = 0;
-	}
-}
+    
