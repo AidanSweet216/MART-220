@@ -28,8 +28,7 @@ function setup()
 {
     createCanvas(windowWidth-20, windowHeight-20);
     setInterval(timeIt, 1000);
-    monteObject = loadAnimation(result[0], result[result.length-1]);
-    //img = loadImage('assets/ice.jpg');
+    //monteObject = loadAnimation(result[0], result[result.length-1]);
     textFont(myFont);
     textSize(36);
     text('p5*js', 10, 50);
@@ -41,7 +40,7 @@ function setup()
       // load the image
       img = loadImage("./assets/animation/" + names[k]);
       // create an object from our image class
-      imageClassObject = new imageClass(img, 650,300, 75, 75);
+      imageClassObject = new imageClass(img, 650, 300, 75, 75);
       // add each object to the array
       imagesToDisplay[k] = imageClassObject;
     }
@@ -57,8 +56,8 @@ function draw()
     square2.drawSquare();
     square2.moveSquare();
     square3.drawSquare();
-    animation(monteObject,350,250);
-    /*image(imagesToDisplay[i].getImage(),
+    //animation(monteObject,350,250);
+    image(imagesToDisplay[i].getImage(),
 		imagesToDisplay[i].getX(), 
 		imagesToDisplay[i].getY(), 
 		imagesToDisplay[i].getW(),
