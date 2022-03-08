@@ -15,6 +15,7 @@ let img;
 let myFont;
 var result = [];
 var monteObject;
+var rockObject;
 function preload() {
   names = loadStrings("./assets/Spin.txt");
   img = loadImage('assets/ice.jpg');
@@ -27,13 +28,17 @@ function setup()
     createCanvas(windowWidth-20, windowHeight-20);
     console.log(names);
     setInterval(timeIt, 1000);
-    monteObject = loadAnimation(names[0], names[names.length-1]);
+    monteObject = createSprite(100,400);
+    //monteObject = loadAnimation(names[0], names[names.length-1])
+    monteObject.addAnimation(names[0], names[names.length-1]);
+    rockObject = createSprite(1500,400);
+    rockObject.addImage(loadImage('assets/rocks.png'));
     textFont(myFont);
     textSize(36);
     text('p5*js', 10, 50);
-    square1 = new mySquare(105,368,100);
-    square2 = new mySquare(1400,368,100);
-    square3 = new mySquare(125,600,125);
+    //square1 = new mySquare(105,368,100);
+    //square2 = new mySquare(1400,368,100);
+    //square3 = new mySquare(125,600,125);
     for(var k = 0; k < names.length; k++)
     {
       // load the image
@@ -50,12 +55,29 @@ function draw()
 {
     background(220);
     image(myImages[0], 0, 0,);
-    square1.drawSquare();
-    square1.moveSquare();
-    square2.drawSquare();
-    square2.moveSquare();
-    square3.drawSquare();
+    //square1.drawSquare();
+   // square1.moveSquare();
+   // square2.drawSquare();
+  //  square2.moveSquare();
+  //  square3.drawSquare();
     animation(monteObject,800,385,);
+    drawSprites();
+    if(keyDown('d'))
+    {
+      monteObject.changeAnimation('names');
+      monteObject.velocity.x += .5;
+      if(monteObject.collide(rockObject))
+      {
+        monteObject.velocity.x = -5 ;
+      }
+    }
+
+    if(keyDown('a'))
+    {
+      monteObject.velocity.x = -5;
+    }
+
+    
     /*image(imagesToDisplay[i].getImage(),
 		imagesToDisplay[i].getX(), 
 		imagesToDisplay[i].getY(), 

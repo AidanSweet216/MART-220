@@ -26,6 +26,14 @@ class mySquare
       {
         this.y+=5;
       }
+
+      if(key == 'd'){
+        this.x+=5;
+      }
+      else if(key == 'a')
+      {
+        this.x-=5;
+      }
     }
 }
 }
