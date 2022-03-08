@@ -17,7 +17,7 @@ var result = [];
 var monteObject;
 var rockObject;
 function preload() {
-  names = loadStrings("./assets/Spin.txt");
+  names = loadStrings("/assets/Spin.txt");
   img = loadImage('assets/ice.jpg');
   myImages[0] = img
   myFont = loadFont('assets/Rowdies-Regular.ttf');
@@ -28,9 +28,8 @@ function setup()
     createCanvas(windowWidth-20, windowHeight-20);
     console.log(names);
     setInterval(timeIt, 1000);
-    monteObject = createSprite(100,400);
-    //monteObject = loadAnimation(names[0], names[names.length-1])
-    monteObject.addAnimation(names[0], names[names.length-1]);
+    monteObject = createSprite(800,400);
+    monteObject.addAnimation('idle',names[0], names[names.length-1]);
     rockObject = createSprite(1500,400);
     rockObject.addImage(loadImage('assets/rocks.png'));
     textFont(myFont);
@@ -39,15 +38,15 @@ function setup()
     //square1 = new mySquare(105,368,100);
     //square2 = new mySquare(1400,368,100);
     //square3 = new mySquare(125,600,125);
-    for(var k = 0; k < names.length; k++)
-    {
+    //for(var k = 0; k < names.length; k++)
+    //{
       // load the image
-      img = loadImage("./assets/animation/" + names[k]);
+      //img = loadImage("./assets/animation/" + names[k]);
       // create an object from our image class
-      imageClassObject = new imageClass(img, 650, 300, 75, 75);
+      //imageClassObject = new imageClass(img, 650, 300, 75, 75);
       // add each object to the array
-      imagesToDisplay[k] = imageClassObject;
-    }
+      //imagesToDisplay[k] = imageClassObject;
+    //}
     
     
 }
@@ -60,11 +59,10 @@ function draw()
    // square2.drawSquare();
   //  square2.moveSquare();
   //  square3.drawSquare();
-    animation(monteObject,800,385,);
+    //animation(monteObject,800,385,);
     drawSprites();
     if(keyDown('d'))
     {
-      monteObject.changeAnimation('names');
       monteObject.velocity.x += .5;
       if(monteObject.collide(rockObject))
       {
