@@ -1,0 +1,10 @@
+assets/animation/monte1.png
+assets/animation/monte2.png
+assets/animation/monte3.png
+assets/animation/monte4.png
+assets/animation/monte5.png
+assets/animation/monte6.png
+assets/animation/monte7.png
+assets/animation/monte8.png
+assets/animation/monte9.png
+assets/animation/monte10.png
