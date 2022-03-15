@@ -17,6 +17,7 @@ var result = [];
 var monteObject;
 var rockObject;
 const particles = [];
+var health = 100;
 function preload() {
   names = loadStrings("/assets/Spin.txt");
   img = loadImage('assets/ice.jpg');
@@ -68,11 +69,12 @@ function draw()
       if(monteObject.collide(rockObject))
       {
         monteObject.velocity.x = -5 ;
-        createParticles(rockObject.position.x, rockObject.position.y);
-        console.log("Particles");
-        rockObject.remove();
-   
-  
+        health -= 10;
+        if(health <= 0)
+        {
+          rockObject.remove();
+          createParticles();
+        }
 
       }
     }
