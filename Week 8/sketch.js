@@ -18,6 +18,9 @@ var monteObject;
 var rockObject;
 const particles = [];
 var health = 100;
+var particleTime = false;
+var particleX = 0;
+var particleY = 0;
 function preload() {
   names = loadStrings("/assets/Spin.txt");
   img = loadImage('assets/ice.jpg');
@@ -28,7 +31,7 @@ function preload() {
 function setup()
 {
     createCanvas(windowWidth-20, windowHeight-20);
-    console.log(names);
+    //console.log(names);
     setInterval(timeIt, 1000);
     monteObject = createSprite(800,400);
     monteObject.addAnimation('idle',names[0], names[names.length-1]);
@@ -63,6 +66,11 @@ function draw()
   //  square3.drawSquare();
     //animation(monteObject,800,385,);
     drawSprites();
+
+    if(particleTime)
+    {
+      createParticles(particleX,particleY);
+    }
     if(keyDown('d'))
     {
       monteObject.velocity.x += .5;
@@ -72,8 +80,12 @@ function draw()
         health -= 10;
         if(health <= 0)
         {
-          rockObject.remove();
-          createParticles();
+        particleTime = true;
+        particleX = rockObject.position.x;
+        particleY = rockObject.position.y;
+
+        rockObject.remove();
+        rockObject.position.x = -100;
         }
 
       }
