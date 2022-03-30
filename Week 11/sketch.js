@@ -1,8 +1,9 @@
 
 let skull;
 let img;
-let boxes = [];
+let skulls = [];
 var rotateSpeed  =.01;
+var myModelObject = [];
 function preload(){
 skull = loadModel('assets/skull.obj');
 img = loadImage('assets/galaxy.jpg');
@@ -10,20 +11,33 @@ img = loadImage('assets/galaxy.jpg');
 
 function setup() {
     createCanvas(displayWidth,displayHeight, WEBGL);
-    boxes[0] = new myBox(50,50,50,200,500);
+    for(let i = 0; i <2; i ++ )
+   {
+     myModelObject[i]= new myModel (random (0,displayWidth),random(0,displayHeight),.01,skull,img);
+
+   }
+  
   }
 
   function draw()
   {
     background(200,200,250);
-    push();
+    for(let i = 0; i < myModelObject.length; i ++)
+    {
+      myModelObject[i].draw();
+    }
+  
+    
+
+  /*push();
     scale(5); // Scaled to make model fit into canvas
     rotateX(frameCount * rotateSpeed);
     rotateY(frameCount * rotateSpeed);
     texture(img)
     noStroke();
-  model(skull);
+    model(skull);
   pop();
+*/
 
  
   }
