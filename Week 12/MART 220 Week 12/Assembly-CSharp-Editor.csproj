@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,56 +53,59 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\AutoRotationInspector.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\PolygonCollider2DInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\OnOffActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\GameObjectInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\ObjectShooterInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\HealthSystemInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\ScriptableObjects\InventoryResourcesInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\FollowTargetInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\AutoMoveInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\ConditionAreaInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\WanderInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\CircleCollider2DInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\RotateWithArrowsInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\CollectableAttrInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\CapsuleCollider2DInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\CameraInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\Rigidbody2DInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\ObjectCreatorAreaInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\MenuItemFunctions.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\DestroyActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\CreateObjectActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\ConsumeResourceActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\TransformInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\DialogueBalloonActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\JumpInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\TeleportActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\MoveWithArrowsInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\ModifyHealthAttributeInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\PatrolInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\BulletAttrInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\PushWithButtonInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\ObjectCreatorAreaInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\CameraFollowInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\UI\UIScriptInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\WanderInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\CollectableAttrInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\MenuItemFunctions.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\Rigidbody2DInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\BaseClasses\InspectorBase.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\EdgeCollider2DInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\GameObjectInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\CircleCollider2DInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\CameraInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\BaseClasses\ConditionInspectorBase.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\BoxCollider2DInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\ConditionCollisionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\LoadLevelActionInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\TimedSelfDestructInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\CameraFollowInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\ComponentInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\SpriteRendererInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\UI\UIScriptInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\ConditionKeyPressInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\Collider2DInspectorBase.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\DestroyForPointsAttrInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\HealthSystemInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\CreateObjectActionInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\PatrolInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\SpriteRendererInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\MoveWithArrowsInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\UI\DialogueSystemInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\TilemapCollider2DInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\PickUpAndHoldInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\TransformInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\JumpInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\Collider2DInspectorBase.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\ScriptableObjects\InventoryResourcesInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\OnOffActionInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\ConditionAreaInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\LoadLevelActionInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\ResourceAttrInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\CapsuleCollider2DInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\BulletAttrInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\PickUpAndHoldInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\TilemapCollider2DInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\TimedSelfDestructInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\FollowTargetInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\ModifyHealthAttributeInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\ConditionCollisionInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\AutoRotationInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\RotateWithArrowsInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\TeleportActionInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\ComponentInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Attributes\DestroyForPointsAttrInspector.cs" />
     <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\ConditionRepeatInspector.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\PushWithButtonInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Gameplay\ObjectShooterInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Movement\AutoMoveInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\Conditions\Actions\ConsumeResourceActionInspector.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Editor\DefaultComponents\EdgeCollider2DInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -342,32 +345,29 @@
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\PackageCache\com.unity.ads@3.4.4\Editor\UnityEditor.Advertisements.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\PackageCache\com.unity.purchasing@2.0.6\UnityEngine.Purchasing.dll</HintPath>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\PackageCache\com.unity.purchasing@2.0.6\Editor\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library\PackageCache\com.unity.purchasing@2.0.6\Editor\UnityEditor.Purchasing.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -750,6 +750,10 @@
       <Project>{75C397E9-C4B1-7BCC-DE7E-05518131B845}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
     </ProjectReference>
+    <ProjectReference Include="com.unity.multiplayer-hlapi.Editor.csproj">
+      <Project>{146D0FBA-6593-3390-2612-1AD051847ECB}</Project>
+      <Name>com.unity.multiplayer-hlapi.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
       <Project>{75F90F16-8387-AAD6-1993-C7BCDE3D24ED}</Project>
       <Name>Unity.2D.Tilemap.Editor</Name>
@@ -773,6 +777,10 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{921A7F49-732C-D30E-6A69-5E1732B770A0}</Project>
       <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{AD46B641-2F54-36C3-BDB0-A438EB5CE981}</Project>
+      <Name>UnityEngine.Advertisements</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Editor.csproj">
       <Project>{04444B15-4335-610C-5DE0-96104BEC5162}</Project>
@@ -810,6 +818,22 @@
       <Project>{4C368849-7270-6A52-9430-376CD2D319A1}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
+      <Project>{ED888D74-2CB3-6900-4C5F-AA8B47479178}</Project>
+      <Name>UnityEngine.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.multiplayer-weaver.Editor.csproj">
+      <Project>{972830D5-F228-5D5F-1B9D-73A364D44DA7}</Project>
+      <Name>com.unity.multiplayer-weaver.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
+      <Project>{83E66836-AD83-297C-6C51-197A340D0D29}</Project>
+      <Name>Unity.Analytics.DataPrivacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.multiplayer-hlapi.Runtime.csproj">
+      <Project>{BCA8AA55-6B73-28DF-728B-F7E58B53BFF5}</Project>
+      <Name>com.unity.multiplayer-hlapi.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{DD9DCFCA-4317-5A2B-76EC-AD5E3C1ADDB2}</Project>
       <Name>Unity.Mathematics</Name>
@@ -817,6 +841,10 @@
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
       <Project>{DEC3A964-11F7-7B7E-0C83-D9D589B34E6F}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
+      <Project>{7365764B-646A-4174-13B6-B6D5563CA18D}</Project>
+      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
       <Project>{34156CF3-55F8-BB89-3197-3AB7444EE138}</Project>
@@ -834,9 +862,17 @@
       <Project>{B0F8E934-0F18-8155-027B-767E78829FB8}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
+      <Project>{0C0E6CB2-618F-0430-D7E9-49EF8F4668DC}</Project>
+      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
       <Project>{A6A34548-ED43-8F85-105E-BA1934D2EC19}</Project>
       <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Monetization.csproj">
+      <Project>{13816BD3-5FE2-C3B4-3B8C-F75B25FFE22C}</Project>
+      <Name>UnityEngine.Monetization</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
       <Project>{6BC0D6F9-2E1C-1893-FC8B-7EEFDD5CCD9F}</Project>
@@ -846,6 +882,10 @@
       <Project>{F370F5EC-FF4C-45A9-A420-04EBCB0679C5}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
+      <Project>{FAE5AD2E-9707-C970-FF6E-7DADF7EF2EA9}</Project>
+      <Name>UnityEditor.SpatialTracking</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
       <Project>{1AEE327E-30FD-1CED-CBED-B4144F63A097}</Project>
       <Name>Unity.2D.Common.Editor</Name>
@@ -853,46 +893,6 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{3270A377-AF8B-34A5-C950-0FB87122DE77}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{ED888D74-2CB3-6900-4C5F-AA8B47479178}</Project>
-      <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Monetization.csproj">
-      <Project>{13816BD3-5FE2-C3B4-3B8C-F75B25FFE22C}</Project>
-      <Name>UnityEngine.Monetization</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.multiplayer-hlapi.Editor.csproj">
-      <Project>{146D0FBA-6593-3390-2612-1AD051847ECB}</Project>
-      <Name>com.unity.multiplayer-hlapi.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
-      <Project>{0C0E6CB2-618F-0430-D7E9-49EF8F4668DC}</Project>
-      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
-      <Project>{FAE5AD2E-9707-C970-FF6E-7DADF7EF2EA9}</Project>
-      <Name>UnityEditor.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.csproj">
-      <Project>{AD46B641-2F54-36C3-BDB0-A438EB5CE981}</Project>
-      <Name>UnityEngine.Advertisements</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
-      <Project>{83E66836-AD83-297C-6C51-197A340D0D29}</Project>
-      <Name>Unity.Analytics.DataPrivacy</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.multiplayer-hlapi.Runtime.csproj">
-      <Project>{BCA8AA55-6B73-28DF-728B-F7E58B53BFF5}</Project>
-      <Name>com.unity.multiplayer-hlapi.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.multiplayer-weaver.Editor.csproj">
-      <Project>{972830D5-F228-5D5F-1B9D-73A364D44DA7}</Project>
-      <Name>com.unity.multiplayer-weaver.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{7365764B-646A-4174-13B6-B6D5563CA18D}</Project>
-      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,47 +53,50 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\Attributes\DestroyForPointsAttribute.cs" />
-    <Compile Include="Assets\Scripts\Conditions\Actions\OnOffAction.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\UIItemScript.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\BaseClasses\Action.cs" />
-    <Compile Include="Assets\Scripts\Conditions\Actions\CreateObjectAction.cs" />
-    <Compile Include="Assets\Scripts\Conditions\Actions\DialogueBalloonAction.cs" />
-    <Compile Include="Assets\Scripts\Movement\Push.cs" />
-    <Compile Include="Assets\Scripts\Movement\AutoMove.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\BaseClasses\ConditionBase.cs" />
-    <Compile Include="Assets\Scripts\Attributes\ModifyHealthAttribute.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Utilities\Utils.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\BaseClasses\Physics2DObject.cs" />
-    <Compile Include="Assets\Scripts\Movement\Patrol.cs" />
-    <Compile Include="Assets\Scripts\Conditions\ConditionCollision.cs" />
-    <Compile Include="Assets\Scripts\Attributes\ResourceAttribute.cs" />
-    <Compile Include="Assets\Scripts\Conditions\ConditionArea.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\ObjectCreatorArea.cs" />
     <Compile Include="Assets\Scripts\Movement\AutoRotate.cs" />
-    <Compile Include="Assets\Scripts\Attributes\CollectableAttribute.cs" />
-    <Compile Include="Assets\Scripts\Conditions\ConditionKeyPress.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\ObjectShooter.cs" />
     <Compile Include="Assets\Scripts\Attributes\BulletAttribute.cs" />
-    <Compile Include="Assets\Scripts\Movement\Rotate.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\UIScript.cs" />
-    <Compile Include="Assets\Scripts\Conditions\Actions\LoadLevelAction.cs" />
-    <Compile Include="Assets\Scripts\Movement\Wander.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\BalloonScript.cs" />
-    <Compile Include="Assets\Scripts\Conditions\Actions\TeleportAction.cs" />
-    <Compile Include="Assets\Scripts\Conditions\Actions\DestroyAction.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Utilities\InventoryResources.cs" />
-    <Compile Include="Assets\Scripts\Attributes\HealthSystemAttribute.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\Utilities\Enums.cs" />
-    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\DialogueSystem.cs" />
     <Compile Include="Assets\Scripts\Conditions\ConditionRepeat.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\UIScript.cs" />
     <Compile Include="Assets\Scripts\Conditions\Actions\ConsumeResourceAction.cs" />
-    <Compile Include="Assets\Scripts\Movement\Move.cs" />
-    <Compile Include="Assets\Scripts\Movement\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\PickUpAndHold.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\UIItemScript.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\BaseClasses\ConditionBase.cs" />
+    <Compile Include="Assets\Scripts\Conditions\ConditionKeyPress.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Actions\DialogueBalloonAction.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\BaseClasses\Physics2DObject.cs" />
+    <Compile Include="Assets\Scripts\Attributes\CollectableAttribute.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ObjectShooter.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\BalloonScript.cs" />
+    <Compile Include="Assets\Scripts\Attributes\ModifyHealthAttribute.cs" />
+    <Compile Include="Assets\Scripts\Movement\Patrol.cs" />
     <Compile Include="Assets\Scripts\Gameplay\TimedSelfDestruct.cs" />
     <Compile Include="Assets\Scripts\Movement\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\Movement\AutoMove.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Actions\DestroyAction.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Utilities\Enums.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\BaseClasses\Action.cs" />
+    <Compile Include="Assets\Scripts\Conditions\ConditionCollision.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Utilities\InventoryResources.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\UserInterface\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\PickUpAndHold.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ObjectCreatorArea.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Actions\OnOffAction.cs" />
+    <Compile Include="Assets\Scripts\Movement\Push.cs" />
+    <Compile Include="Assets\Scripts\Movement\Wander.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Actions\LoadLevelAction.cs" />
+    <Compile Include="Assets\Scripts\Movement\Move.cs" />
+    <Compile Include="Assets\Scripts\Movement\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Conditions\ConditionArea.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Actions\CreateObjectAction.cs" />
+    <Compile Include="Assets\_INTERNAL_\Scripts\Utilities\Utils.cs" />
+    <Compile Include="Assets\Scripts\Attributes\ResourceAttribute.cs" />
+    <Compile Include="Assets\Scripts\Conditions\Actions\TeleportAction.cs" />
     <Compile Include="Assets\Scripts\Movement\Jump.cs" />
+    <Compile Include="Assets\Scripts\Movement\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Attributes\HealthSystemAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -339,26 +342,23 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>Library\PackageCache\com.unity.purchasing@2.0.6\UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -723,45 +723,17 @@
       <Project>{921A7F49-732C-D30E-6A69-5E1732B770A0}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{AD46B641-2F54-36C3-BDB0-A438EB5CE981}</Project>
+      <Name>UnityEngine.Advertisements</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{4C368849-7270-6A52-9430-376CD2D319A1}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{DD9DCFCA-4317-5A2B-76EC-AD5E3C1ADDB2}</Project>
-      <Name>Unity.Mathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
-      <Project>{DEC3A964-11F7-7B7E-0C83-D9D589B34E6F}</Project>
-      <Name>Unity.2D.IK.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
-      <Project>{34156CF3-55F8-BB89-3197-3AB7444EE138}</Project>
-      <Name>Unity.2D.Animation.Triangle.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
-      <Project>{5D4BD687-5BE7-7AA5-AB02-0D0BFC5F9E06}</Project>
-      <Name>Unity.2D.Animation.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
-      <Project>{6BC0D6F9-2E1C-1893-FC8B-7EEFDD5CCD9F}</Project>
-      <Name>Unity.2D.Common.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
-      <Project>{3270A377-AF8B-34A5-C950-0FB87122DE77}</Project>
-      <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
       <Project>{ED888D74-2CB3-6900-4C5F-AA8B47479178}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Monetization.csproj">
-      <Project>{13816BD3-5FE2-C3B4-3B8C-F75B25FFE22C}</Project>
-      <Name>UnityEngine.Monetization</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.csproj">
-      <Project>{AD46B641-2F54-36C3-BDB0-A438EB5CE981}</Project>
-      <Name>UnityEngine.Advertisements</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
       <Project>{83E66836-AD83-297C-6C51-197A340D0D29}</Project>
@@ -771,9 +743,37 @@
       <Project>{BCA8AA55-6B73-28DF-728B-F7E58B53BFF5}</Project>
       <Name>com.unity.multiplayer-hlapi.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{DD9DCFCA-4317-5A2B-76EC-AD5E3C1ADDB2}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
+      <Project>{DEC3A964-11F7-7B7E-0C83-D9D589B34E6F}</Project>
+      <Name>Unity.2D.IK.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
       <Project>{7365764B-646A-4174-13B6-B6D5563CA18D}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
+      <Project>{34156CF3-55F8-BB89-3197-3AB7444EE138}</Project>
+      <Name>Unity.2D.Animation.Triangle.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
+      <Project>{5D4BD687-5BE7-7AA5-AB02-0D0BFC5F9E06}</Project>
+      <Name>Unity.2D.Animation.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Monetization.csproj">
+      <Project>{13816BD3-5FE2-C3B4-3B8C-F75B25FFE22C}</Project>
+      <Name>UnityEngine.Monetization</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
+      <Project>{6BC0D6F9-2E1C-1893-FC8B-7EEFDD5CCD9F}</Project>
+      <Name>Unity.2D.Common.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
+      <Project>{3270A377-AF8B-34A5-C950-0FB87122DE77}</Project>
+      <Name>Unity.2D.SpriteShape.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
