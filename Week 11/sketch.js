@@ -43,8 +43,8 @@ function mouseClicked()
 {
     this.x = mouseX-width/2;
     this.y = mouseY-height/2;
-    myModelObject.updateX(this.xx);
-    myModelObject.updateY(this.yy);
+    myModelObject.updateX(this.x);
+    myModelObject.updateY(this.y);
    
 }
   }
