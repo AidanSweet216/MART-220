@@ -39,11 +39,14 @@ function setup() {
   pop();
 */
 
- 
+function mouseClicked()
+{
+    this.x = mouseX-width/2;
+    this.y = mouseY-height/2;
+    myModelObject.updateX(this.xx);
+    myModelObject.updateY(this.yy);
+   
+}
   }
 
-  function mousePressed()
-  {
-    
-  }
   
