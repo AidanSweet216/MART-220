@@ -14,7 +14,7 @@ class myModel
     {
 push();
     translate(this.x,this.y)
-    scale(5); // Scaled to make model fit into canvas
+    scale(-2); // Scaled to make model fit into canvas
     rotateX(frameCount * this.speed);
     rotateY(frameCount * this.speed);
     texture(this.img)

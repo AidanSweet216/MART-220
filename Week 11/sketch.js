@@ -11,9 +11,9 @@ img = loadImage('assets/galaxy.jpg');
 
 function setup() {
     createCanvas(displayWidth,displayHeight, WEBGL);
-    for(let i = 0; i <2; i ++ )
+    for(let i = 0; i <5; i ++ )
    {
-     myModelObject[i]= new myModel (random (0,displayWidth),random(0,displayHeight),.01,skull,img);
+     myModelObject[i]= new myModel (random (0,500),random(0,500),.01,skull,img);
 
    }
   
@@ -44,5 +44,6 @@ function setup() {
 
   function mousePressed()
   {
-    rotateSpeed += 10;
+    
   }
+  
