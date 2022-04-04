@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637846978995546416
-    m_Hash: 1860606031
+      ticks: 637846982672665284
+    m_Hash: 2826490658
   m_LockFileStatus:
     m_FilePath: C:/Users/sweet/Documents/GitHub/MART-220/Week 12/MART 220 Week 12/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637846979223872207
-    m_Hash: 1307731283
+      ticks: 637846982749357199
+    m_Hash: 2240838097
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -127,6 +127,7 @@ m_PackageAssets:
         - 8.0.0-pre.3
         - 8.0.0-pre.4
         - 8.0.0
+        - 8.0.1
         compatible:
         - 5.0.6
         - 5.0.7
@@ -659,6 +660,284 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
+    - packageId: com.unity.ads@3.4.4
+      testable: 0
+      isDirectDependency: 1
+      version: 3.4.4
+      source: 1
+      resolvedPath: C:\Users\sweet\Documents\GitHub\MART-220\Week 12\MART 220 Week
+        12\Library\PackageCache\com.unity.ads@3.4.4
+      assetPath: Packages/com.unity.ads
+      name: com.unity.ads
+      displayName: Advertisement
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        verified: 3.7.5
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - ads
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637197210360000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
+        revision: 7e6ea73e40c582920b036810b04fe9225e551701
+        path: 
+    - packageId: com.unity.analytics@3.3.5
+      testable: 0
+      isDirectDependency: 1
+      version: 3.3.5
+      source: 1
+      resolvedPath: C:\Users\sweet\Documents\GitHub\MART-220\Week 12\MART 220 Week
+        12\Library\PackageCache\com.unity.analytics@3.3.5
+      assetPath: Packages/com.unity.analytics
+      name: com.unity.analytics
+      displayName: Analytics Library
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        - 3.8.1
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        - 3.8.1
+        verified: 3.6.12
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - analytics
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637146252790000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@github.cds.internal.unity3d.com:unity/com.unity.analytics.git
+        revision: 98d7da077d4e205d8500771aa31648bdedd0f9e2
+        path: 
     - packageId: com.unity.collab-proxy@1.9.0
       testable: 0
       isDirectDependency: 1
@@ -1084,6 +1363,235 @@ m_PackageAssets:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.ide.vscode.git
         revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
+        path: 
+    - packageId: com.unity.multiplayer-hlapi@1.0.4
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.4
+      source: 1
+      resolvedPath: C:\Users\sweet\Documents\GitHub\MART-220\Week 12\MART 220 Week
+        12\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.4
+      assetPath: Packages/com.unity.multiplayer-hlapi
+      name: com.unity.multiplayer-hlapi
+      displayName: Multiplayer HLAPI
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The high level API component of the Unity Multiplayer system.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.2.4-preview
+        - 0.2.5-preview
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
+        - 1.0.4
+        - 1.0.6
+        - 1.0.8
+        - 1.1.1
+        compatible:
+        - 0.2.4-preview
+        - 0.2.5-preview
+        - 1.0.0
+        - 1.0.1
+        - 1.0.2
+        - 1.0.4
+        - 1.0.6
+        - 1.0.8
+        - 1.1.1
+        verified: 
+      dependencies:
+      - name: nuget.mono-cecil
+        version: 0.1.5-preview
+      resolvedDependencies:
+      - name: nuget.mono-cecil
+        version: 0.1.5-preview
+      keywords:
+      - multiplayer
+      - networking
+      - hlapi
+      - high-level
+      - api
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 636951709040000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://gitlab.cds.internal.unity3d.com/upm-packages/multiplayer/com.unity.multiplayer-hlapi.git
+        revision: 1728a66e30f72dafce0a52a7bbf906320277bcfb
+        path: 
+    - packageId: com.unity.purchasing@2.0.6
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.6
+      source: 1
+      resolvedPath: C:\Users\sweet\Documents\GitHub\MART-220\Week 12\MART 220 Week
+        12\Library\PackageCache\com.unity.purchasing@2.0.6
+      assetPath: Packages/com.unity.purchasing
+      name: com.unity.purchasing
+      displayName: In App Purchasing
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Unity IAP supports the iOS, Mac, tvOS, Google Play, Facebook
+        Gameroom, Windows, Amazon, Samsung Galaxy, Tizen, Cloud Moolah MOO, Xiaomi
+        Mi Game Pay App Stores.
+
+
+        With Unity IAP, setting up in-app purchases
+        for your game across multiple app stores has never been easier.
+
+
+        Use
+        one common API to access all stores for free. With just a few lines of code,
+        you can fully understand and optimize your in-game economy.
+
+
+        Unity
+        IAP automatically couples with Unity Analytics enabling you to monitor and
+        act on trends in your revenue and purchase data across multiple platforms.
+
+
+        Includes
+        client-side receipt validation for Apple, Google Play, and Xiaomi Mi Game
+        Pay.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        verified: 3.2.3
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - purchasing
+      - iap
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 636898903830000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://gitlab.cds.internal.unity3d.com/upm-packages/purchasing/com.unity.purchasing
+        revision: 37674e38ef7548642e33bc97797a71b5eadbecac
         path: 
     - packageId: com.unity.test-framework@1.1.29
       testable: 0
@@ -1582,6 +2090,88 @@ m_PackageAssets:
         type: 
         url: 
         revision: 
+        path: 
+    - packageId: com.unity.xr.legacyinputhelpers@2.0.2
+      testable: 0
+      isDirectDependency: 1
+      version: 2.0.2
+      source: 1
+      resolvedPath: C:\Users\sweet\Documents\GitHub\MART-220\Week 12\MART 220 Week
+        12\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+      assetPath: Packages/com.unity.xr.legacyinputhelpers
+      name: com.unity.xr.legacyinputhelpers
+      displayName: XR Legacy Input Helpers
+      author:
+        name: 
+        email: 
+        url: 
+      category: XR
+      type: 
+      description: This package includes the tracked pose driver for the legacy input
+        system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+        Pose Driver. The Tracked Pose Driver is a monobehavior that enables GameObjects
+        to track input devices, the XR Bindings Seeding Tool adds a menu item under
+        the 'Assets' menu which populates the Input Asset with Unity's crossplatform
+        Input Bindings
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        - 1.0.2
+        - 1.0.3
+        - 1.3.1
+        - 1.3.2
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.3.8
+        - 1.3.11
+        - 2.0.1
+        - 2.0.2
+        - 2.0.4
+        - 2.0.6
+        - 2.0.8
+        - 2.1.1
+        - 2.1.2
+        - 2.1.3
+        - 2.1.4
+        - 2.1.6
+        - 2.1.7
+        - 2.1.8
+        - 2.1.9
+        compatible:
+        - 2.1.8
+        - 2.1.9
+        verified: 2.1.9
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - TPD
+      - Tracked Pose Driver
+      - XR
+      - Input
+      - Helpers
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 636898920010000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://gitlab.cds.internal.unity3d.com/upm-packages/XR/LegacyInputHelpers.git
+        revision: 2e7c4c4dbcced83a7e72862f069f6547f4808b42
         path: 
     - packageId: com.unity.modules.ai@1.0.0
       testable: 0
@@ -3421,6 +4011,57 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
+        path: 
+    - packageId: nuget.mono-cecil@0.1.5-preview
+      testable: 0
+      isDirectDependency: 0
+      version: 0.1.5-preview
+      source: 1
+      resolvedPath: C:\Users\sweet\Documents\GitHub\MART-220\Week 12\MART 220 Week
+        12\Library\PackageCache\nuget.mono-cecil@0.1.5-preview
+      assetPath: Packages/nuget.mono-cecil
+      name: nuget.mono-cecil
+      displayName: Mono Cecil
+      author:
+        name: 
+        email: 
+        url: 
+      category: Libraries
+      type: 
+      description: Cecil is a library to inspect, modify and generate .NET programs
+        and libraries. https://github.com/jbevain/cecil
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.5-preview
+        compatible:
+        - 0.1.5-preview
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - ECMA
+      - CIL
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
         path: 
     - packageId: com.unity.mathematics@1.1.0
       testable: 0
