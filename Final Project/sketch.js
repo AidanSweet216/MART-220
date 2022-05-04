@@ -60,18 +60,18 @@ function draw()
   
     text(x +"and"+ y, 100, 300);
     textSize(42);
-    text("Griz Pong", 650, 34);
-    text("By: Aidan Sweet", 1171, 857);
-    text("Back", 135, 675);
+    text("Griz Pong", 880, 34);
+    text("By: Aidan Sweet", 1500, 1000);
+    text("Back", 60, 1000);
 
    if (timerValue >= 30) {
-    text("0:" + timerValue, 700,  70);
+    text("0:" + timerValue, 920,  70);
   }
   if (timerValue < 30) {
-    text('0:' + timerValue, 700, 70);
+    text('0:' + timerValue, 920, 70);
   }
   if (timerValue == 0) {
-    text('Game Over',  625, 100);
+    text('Game Over',  880, 100);
     speedX = 0;
   }
 
