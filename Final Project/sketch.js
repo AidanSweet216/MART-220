@@ -1,24 +1,30 @@
 var x = 0;
 var y = 0;
-var circX = 785;
-var circY = 368;
 var speedX = 10;
 var speedY = 10;
-var timerValue = 30;
+var timerValue = 60;
 var myImages = [];
 var i = [];
 var imagesToDisplay = [];
 var imageClassObject;
 var names = [];
 var start = 100;
+var player1X = 105;
+var player1Y = 368;
+var wallTop;
+var wallBottom;
+var MAX_SPEED = 10;
 let img;
+let img2;
 let myFont;
 let monteObject;
 function preload() {
   names = loadStrings("./assets/Spin.txt");
   img = loadImage('assets/ice.png');
   myImages[0] = img
+  img2 = loadImage('assets/monte.png');
   myFont = loadFont('assets/Rowdies-Regular.ttf');
+  
 }
 
 function setup()
@@ -28,36 +34,51 @@ function setup()
     textFont(myFont);
     textSize(36);
     text('p5*js', 10, 50);
-    monteObject= new monte(100,200,50);
-    Player_1 = new Player1(105,368,100);
+    wallTop = createSprite(width/2, -30/2, width, 30);
+    wallTop.immovable = true;
+    wallBottom = createSprite(width/2, height+30/2, width, 30);
+    wallBottom.immovable = true;
+    monteObject= createSprite(970,590,);
+    monteObject.addImage(img2);
+    monteObject.maxSpeed = MAX_SPEED;
+    monteObject.velocity.y = 0;
+    monteObject.velocity.x = 0;
+    Player_1 = createSprite(105,368,100);
+    Player_1.immovable = true;
+
     Player_2 = new Player2(1400,368,100);
-    for(var k = 0; k < names.length; k++)
-    {
-      // load the image
-     // img = loadImage("./assets/animation/" + names[k]);
-      // create an object from our image class
-      //imageClassObject = new imageClass(img, 650,300, 75, 75);
-      // add each object to the array
-     // imagesToDisplay[k] = imageClassObject;
-    }
-    setInterval(changeTheDarnAnimation, 100);
+    monteObject.setSpeed(MAX_SPEED, -180);
     
 }
 function draw()
 {
     background(220);
-    monteObject.createSprite();
     image(myImages[0], 0, 0,);
-    Player_1.drawSquare();
-    Player_1.mouseDragged();
-    Player_2.drawSquare();
-    Player_2.moveSquare();
-    //image(imagesToDisplay[i].getImage(),
-		//imagesToDisplay[i].getX(), 
-		//imagesToDisplay[i].getY(), 
-		//imagesToDisplay[i].getW(),
-	//	imagesToDisplay[i].getH());
-  
+    drawSprites();
+
+   Player_1.position.x = mouseX;
+  Player_1.position.y = mouseY;
+  var swing;
+  if(monteObject.bounce(Player_1)) {
+    swing = (monteObject.position.y-Player_1.position.y)/3;
+    monteObject.setSpeed(MAX_SPEED, monteObject.getDirection()+swing);
+  }
+
+  monteObject.bounce(wallTop);
+  monteObject.bounce(wallBottom);
+
+  if(monteObject.position.x<0) {
+    monteObject.position.x = width/2;
+    monteObject.position.y = height/2;
+    monteObject.setSpeed(MAX_SPEED, 0);
+  }
+
+  if(monteObject.position.x>width) {
+    monteObject.position.x = width/2;
+    monteObject.position.y = height/2;
+    monteObject.setSpeed(MAX_SPEED, 180);
+  }
+ 
     text(x +"and"+ y, 100, 300);
     textSize(42);
     text("Griz Pong", 880, 34);
@@ -65,30 +86,18 @@ function draw()
     text("Back", 60, 1000);
 
    if (timerValue >= 30) {
-    text("0:" + timerValue, 920,  70);
+    text(timerValue, 955,  70);
   }
   if (timerValue < 30) {
-    text('0:' + timerValue, 920, 70);
+    text(timerValue, 955, 70);
   }
   if (timerValue == 0) {
     text('Game Over',  880, 100);
-    speedX = 0;
+    MAX_SPEED = 0;
   }
-
+}
   
-    if (circX >= 1350)
-    {
-        speedX = 10;
-        speedX = -speedX;
-    }
-    else if (circX < 105)
-    {
-        speedX = 10;
-    }
-    circX = circX + speedX;
-
-  }
-
+ 
 function mouseMoved()
 {
     x = mouseX;
@@ -102,16 +111,10 @@ function mouseMoved()
       
     }
 
-    function changeTheDarnAnimation()
-{
-	
-	i+=1;
-
-	if(i >= imagesToDisplay.length)
-	{
-		
-		i = 0;
-	}
-}
-
+    function increaseVelocity(){
+    console.log(monteObject.velocity.x);
+    monteObject.velocity.y  +=1;
+    monteObject.velocity.x +=1;
+  }
+    
 

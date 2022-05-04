@@ -7,9 +7,11 @@ class Player1
         this.size = size
     }
 
-    drawSquare()
+    createSprite()
     {
-        square(this.x, this.y, this.size)
+        this.x
+        this.y
+        this.size
     }
     
     mouseDragged()
