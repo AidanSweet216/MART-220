@@ -1,19 +1,15 @@
 var x = 0;
 var y = 0;
-var speedX = 10;
-var speedY = 10;
 var timerValue = 60;
 var myImages = [];
 var i = [];
 var imagesToDisplay = [];
 var imageClassObject;
-var names = [];
-var start = 100;
-var player1X = 105;
-var player1Y = 368;
 var wallTop;
 var wallBottom;
 var MAX_SPEED = 10;
+var score1Value = 0;
+var score2Value = 0;
 let img;
 let img2;
 let myFont;
@@ -45,8 +41,11 @@ function setup()
     monteObject.velocity.x = 0;
     Player_1 = createSprite(105,368,100);
     Player_1.immovable = true;
+    Player_1.shapeColor = color(220,20,60);
+    Player_2 = createSprite(1500,500,100);
+    Player_2.immovable = true;
+    Player_2.shapeColor = color(128,128,128);
 
-    Player_2 = new Player2(1400,368,100);
     monteObject.setSpeed(MAX_SPEED, -180);
     
 }
@@ -55,12 +54,17 @@ function draw()
     background(220);
     image(myImages[0], 0, 0,);
     drawSprites();
-
-   Player_1.position.x = mouseX;
-  Player_1.position.y = mouseY;
+    Player_1.position.x = touches[0].x;
+    Player_1.position.y = touches[0].y;
+  
+  
   var swing;
   if(monteObject.bounce(Player_1)) {
     swing = (monteObject.position.y-Player_1.position.y)/3;
+    monteObject.setSpeed(MAX_SPEED, monteObject.getDirection()+swing);
+  }
+  if(monteObject.bounce(Player_2)) {
+    swing = (monteObject.position.y-Player_2.position.y)/3;
     monteObject.setSpeed(MAX_SPEED, monteObject.getDirection()+swing);
   }
 
@@ -71,6 +75,7 @@ function draw()
     monteObject.position.x = width/2;
     monteObject.position.y = height/2;
     monteObject.setSpeed(MAX_SPEED, 0);
+
   }
 
   if(monteObject.position.x>width) {
@@ -84,6 +89,8 @@ function draw()
     text("Griz Pong", 880, 34);
     text("By: Aidan Sweet", 1500, 1000);
     text("Back", 60, 1000);
+    text(score1Value,650,50);
+    text(score2Value,1250,50);
 
    if (timerValue >= 30) {
     text(timerValue, 955,  70);
