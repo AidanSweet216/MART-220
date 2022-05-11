@@ -10,6 +10,7 @@ var wallBottom;
 var MAX_SPEED = 10;
 var score1Value = 0;
 var score2Value = 0;
+var points = 1;
 let img;
 let img2;
 let myFont;
@@ -54,9 +55,17 @@ function draw()
     background(220);
     image(myImages[0], 0, 0,);
     drawSprites();
-    Player_1.position.x = touches[0].x;
-    Player_1.position.y = touches[0].y;
-  
+    if(touches.length > 0)
+    {
+      Player_1.position.x = touches[0].x;
+      Player_1.position.y = touches[0].y;
+
+    }
+
+    if(touches.length > 1){
+      Player_2.position.x = touches[1].x;
+      Player_2.position.y = touches[1].y;
+    }
   
   var swing;
   if(monteObject.bounce(Player_1)) {
@@ -75,6 +84,7 @@ function draw()
     monteObject.position.x = width/2;
     monteObject.position.y = height/2;
     monteObject.setSpeed(MAX_SPEED, 0);
+    score1Value++;
 
   }
 
@@ -82,9 +92,8 @@ function draw()
     monteObject.position.x = width/2;
     monteObject.position.y = height/2;
     monteObject.setSpeed(MAX_SPEED, 180);
+    score2Value++;
   }
- 
-    text(x +"and"+ y, 100, 300);
     textSize(42);
     text("Griz Pong", 880, 34);
     text("By: Aidan Sweet", 1500, 1000);
@@ -118,10 +127,7 @@ function mouseMoved()
       
     }
 
-    function increaseVelocity(){
-    console.log(monteObject.velocity.x);
-    monteObject.velocity.y  +=1;
-    monteObject.velocity.x +=1;
-  }
+   
+  
     
 
